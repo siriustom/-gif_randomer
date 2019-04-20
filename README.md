@@ -1,5 +1,5 @@
 # gif_randomer
-An single page app that allows user to see random GIFs, using React Native, GraphQL, and Apollo.
+A single page app that allows user to see random GIFs, using React Native, GraphQL, and Apollo.
 ## how to start
 1. make sure you installed watchman
 2. git clone https://github.com/siriustom/-gif_randomer.git
