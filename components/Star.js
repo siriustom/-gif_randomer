@@ -33,7 +33,7 @@ export default class Star extends React.Component {
                 {(keyValue_setValue) => (
                     <Icon
                         name='star'
-                        color={this.state.status ? "yellow" : "gray"}
+                        color={this.state.status ? "#f4d442" : "gray"}
                         onPress={() => {
                             keyValue_setValue(
                                 {

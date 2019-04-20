@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "A single page app that allows user to see random GIFs, using React Native, GraphQL, and Apollo.",
+    "githubUrl": "https://github.com/siriustom/gif_randomer"
   }
 }
