@@ -1,9 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { Mutation } from 'react-apollo';
 import gql from 'graphql-tag';
-import { LIKE, NOT_LIKE } from '../constants';
 
 const LIKE_GIF = gql`
   mutation LikeGif($input: SetValueForKeyInput!) {

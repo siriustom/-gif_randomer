@@ -1,8 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Platform, Button } from 'react-native';
 import ApolloClient from 'apollo-boost';
 import {ApolloProvider, Query} from 'react-apollo';
-import { Button } from 'react-native';
 import GifView from './components/GifView';
 import gql from 'graphql-tag';
 
@@ -58,7 +57,7 @@ export default class App extends React.Component {
                         <View style={styles.buttonStyle}>
                           <Button
                             title="Re-roll"
-                            color="white"
+                            color={Platform.OS === 'ios' ? "white" : "#f4426e"}
                             onPress={() => {
                               refetch();
                             }}
@@ -84,8 +83,8 @@ const styles = StyleSheet.create({
   },
   buttonStyle: {
     backgroundColor: '#f4426e',
-    width: 60,
-    height: 60,
+    width: Platform.OS === 'ios' ? 60 : 0,
+    height: Platform.OS === 'ios' ? 60 : 0,
     borderRadius: 100
   }
 });

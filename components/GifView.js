@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Platform } from 'react-native';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 import Star from './Star';
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     starContainer: {
         height: 60,
         backgroundColor: '#fff',
-        alignItems: 'flex-end',
+        alignItems: Platform.OS === 'ios' ? 'flex-end' : 'center',
         justifyContent: 'center',
     },
 });
